@@ -41,34 +41,11 @@ namespace The_Hound_s_Daily_Inspirational_Quote
             // Creating new random variable
             int rInt = u.Next(0, lines.Length - 1);
             // Switch statement for what value the variable is given
-            switch (rInt)
-            {
-                case 1:
-                    label1.Text = lines[5];
-                    break;
-                case 2:
-                    label1.Text = lines[4];
-                    break;
-                case 3:
-                    label1.Text = lines[1];
-                    break;
-                case 4:
-                    label1.Text = lines[2];
-                    break;
-                case 5:
-                    label1.Text = lines[0];
-                    break;
-                case 6:
-                    label1.Text = lines[6];
-                    break;
-                case 7:
-                    label1.Text = lines[7];
-                    break;
-                case 8:
-                    label1.Text = lines[3];
-                    break;
+   
+            label1.Text = lines[rInt];
 
-            }
+
+            
             // Setting variables for the sound files
             SoundPlayer corpse = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.corpse);
             SoundPlayer dwarf = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.dwarf);
