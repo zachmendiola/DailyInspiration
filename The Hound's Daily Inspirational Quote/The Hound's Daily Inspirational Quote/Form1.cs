@@ -58,28 +58,28 @@ namespace The_Hound_s_Daily_Inspirational_Quote
             // Switch statement using the Play method to play the sound that corresponds to the quote.
             switch (rInt)
             {
-                case 1:
+                case 0:
                     corpse.Play();
                     break;
-                case 2:
+                case 1:
                     dwarf.Play();
                     break;
-                case 3:
+                case 2:
                     fk.Play();
                     break;
-                case 4:
+                case 3:
                     cts.Play();
                     break;
-                case 5:
+                case 4:
                     wine.Play();
                     break;
-                case 6:
+                case 5:
                     chick.Play();
                     break;
-                case 7:
+                case 6:
                     fam.Play();
                     break;
-                case 8:
+                case 7:
                     peasants.Play();
                     break;
             }
