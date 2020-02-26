@@ -7,3 +7,12 @@ C:\Users\Student2\source\repos\The Hound's Daily Inspirational Quote\The Hound's
 C:\Users\Student2\source\repos\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The Hound's Daily Inspirational Quote.csproj.GenerateResource.cache
 C:\Users\Student2\source\repos\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The Hound's Daily Inspirational Quote.exe
 C:\Users\Student2\source\repos\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The Hound's Daily Inspirational Quote.pdb
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\bin\Debug\The Hound's Daily Inspirational Quote.exe.config
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\bin\Debug\The Hound's Daily Inspirational Quote.exe
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\bin\Debug\The Hound's Daily Inspirational Quote.pdb
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The Hound's Daily Inspirational Quote.csprojAssemblyReference.cache
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The_Hound_s_Daily_Inspirational_Quote.Form1.resources
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.resources
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The Hound's Daily Inspirational Quote.csproj.GenerateResource.cache
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The Hound's Daily Inspirational Quote.exe
+C:\Users\elite\OneDrive\Documents\GitHub\DailyInspiration\The Hound's Daily Inspirational Quote\The Hound's Daily Inspirational Quote\obj\Debug\The Hound's Daily Inspirational Quote.pdb
