@@ -14,33 +14,15 @@ namespace The_Hound_s_Daily_Inspirational_Quote
 {
     public partial class Form1 : Form
     {
+        static Random u = new Random();
+        static StreamReader fopen = new StreamReader("Script.txt");
+        static string line = fopen.ReadToEnd();
+        static string[] lines = line.Split('\n');
+        static int rInt = u.Next(0, lines.Length - 1);
+
         public Form1()
         {
             InitializeComponent();
-            string[] quotes = new string[] { };
-            try
-            {
-                // Sets StreamReader variable to read from script.txt
-                StreamReader fopen = new StreamReader("Script.txt");
-                // Reading the file
-                string line = fopen.ReadToEnd();
-                // Splitting the file by newlines, forming a string array of quotes
-                string[] lines = line.Split('\n');
-
-                // Initialization of random variable 'u'
-                Random u = new Random();
-                // Declaring and integer variable equal to a random number
-                int rInt = u.Next(0, lines.Length-1);
-                // Setting variable that is equal to a random indice of the string array
-                string phrases = lines[rInt];
-                // Setting the text in the box equal to that random phrase
-                label1.Text = phrases;
-            }
-            
-            catch
-            { 
-                Console.WriteLine("Error in file reading.");
-            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -53,24 +35,40 @@ namespace The_Hound_s_Daily_Inspirational_Quote
 
         }
 
-        // Picture clicking class that reacts to the user clicking the picture.
+        // Picture clicking Method that reacts to the user clicking the picture.
         public void pictureBox1_Click(object sender, EventArgs e)
         {
-            // Restating the previous code, randomizing the text displayed
-            // when the user clicks on the picture.
-            StreamReader fopen = new StreamReader("Script.txt");
-            string line = fopen.ReadToEnd();
-            string[] lines = line.Split('\n');
-            Random u = new Random();
+            // Creating new random variable
             int rInt = u.Next(0, lines.Length - 1);
-            label1.Text = lines[rInt];
+            // Switch statement for what value the variable is given
+            switch (rInt)
+            {
+                case 1:
+                    label1.Text = lines[5];
+                    break;
+                case 2:
+                    label1.Text = lines[4];
+                    break;
+                case 3:
+                    label1.Text = lines[1];
+                    break;
+                case 4:
+                    label1.Text = lines[2];
+                    break;
+                case 5:
+                    label1.Text = lines[0];
+                    break;
+                case 6:
+                    label1.Text = lines[6];
+                    break;
+                case 7:
+                    label1.Text = lines[7];
+                    break;
+                case 8:
+                    label1.Text = lines[3];
+                    break;
 
-            // Calls the playaudio method
-            playaudio();
-        }
-        // Playaudio chooses a random sound quote and plays it.
-        public void playaudio() 
-        {
+            }
             // Setting variables for the sound files
             SoundPlayer corpse = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.corpse);
             SoundPlayer dwarf = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.dwarf);
@@ -80,15 +78,8 @@ namespace The_Hound_s_Daily_Inspirational_Quote
             SoundPlayer chick = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.chickens);
             SoundPlayer fam = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.family);
             SoundPlayer peasants = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.peasants);
-            SoundPlayer lommy = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.lommy);
-
-            // Initialization of an array of numbers 1-9.
-            int[] arrayal = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            // Initialization of random variable 's' and int variable 'sInt'.
-            Random s = new Random();
-            int sInt = s.Next(1, arrayal.Length);
-            // Switch statement that changes the files played depending on what random number was chosen.
-            switch (sInt)
+            // Switch statement using the Play method to play the sound that corresponds to the quote.
+            switch (rInt)
             {
                 case 1:
                     corpse.Play();
@@ -114,15 +105,10 @@ namespace The_Hound_s_Daily_Inspirational_Quote
                 case 8:
                     peasants.Play();
                     break;
-                case 9:
-                    lommy.Play();
-                    break;
             }
-        }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+        }   
 
-        }
+        
     }
 }
