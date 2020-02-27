@@ -40,12 +40,10 @@ namespace The_Hound_s_Daily_Inspirational_Quote
         {
             // Creating new random variable
             int rInt = u.Next(0, lines.Length - 1);
+
             // Switch statement for what value the variable is given
-   
             label1.Text = lines[rInt];
 
-
-            
             // Setting variables for the sound files
             SoundPlayer corpse = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.corpse);
             SoundPlayer dwarf = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.dwarf);
@@ -55,35 +53,19 @@ namespace The_Hound_s_Daily_Inspirational_Quote
             SoundPlayer chick = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.chickens);
             SoundPlayer fam = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.family);
             SoundPlayer peasants = new SoundPlayer(The_Hound_s_Daily_Inspirational_Quote.Properties.Resources.peasants);
-            // Switch statement using the Play method to play the sound that corresponds to the quote.
-            switch (rInt)
-            {
-                case 0:
-                    corpse.Play();
-                    break;
-                case 1:
-                    dwarf.Play();
-                    break;
-                case 2:
-                    fk.Play();
-                    break;
-                case 3:
-                    cts.Play();
-                    break;
-                case 4:
-                    wine.Play();
-                    break;
-                case 5:
-                    chick.Play();
-                    break;
-                case 6:
-                    fam.Play();
-                    break;
-                case 7:
-                    peasants.Play();
-                    break;
-            }
 
+            List <SoundPlayer> soundPlayers = new List<SoundPlayer>();
+
+            soundPlayers.Add(corpse);
+            soundPlayers.Add(dwarf);
+            soundPlayers.Add(fk);
+            soundPlayers.Add(cts);
+            soundPlayers.Add(wine);
+            soundPlayers.Add(chick);
+            soundPlayers.Add(fam);
+            soundPlayers.Add(peasants);
+            // Switch statement using the Play method to play the sound that corresponds to the quote.
+            soundPlayers[rInt].Play();
         }   
 
         
