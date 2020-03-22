@@ -3,6 +3,6 @@ For when you need a little daily inspiration. Displays a random quote from Sando
 
 For use:
 1. Clone the repository.
-2. Extract the zip file.
+2. Extract the zip file to a new location.
 3. Click the executable file, "The Hound's Daily Inspirational Quote.exe"
 File Pathway: DailyInspiration-master/The Hound's Daily Inspirational Quote/The Hound's Daily Inspirational Quote/bin/Debug/
